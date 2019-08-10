@@ -51,54 +51,55 @@
                         <!--Grid column-->
                         <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
 
-                            <div class="list-group list-group-horizontal">
 
-                                <form class="noteForm needs-validation" id="fromInputs">
-                                    <!-- -->
-                                    <div class="form-row" id="notes_form">
-                                        <div class="col-md-4 mb-3 md-form" id="NoteTask">
-                                            <label for="Task">Task</label>
-                                            <input type="text" class="form-control" id="noteTaskName" required>
-                                            <div class="invalid-feedback">
-                                                Please Write your task
-                                            </div>
+                            <form class="noteForm needs-validation" id="fromInputs">
+                                <!-- -->
+                                <div class="form-row" id="notes_form">
 
-
-                                            <div class="col-md-4 mb-3" id="NoteDate">
-                                                <label for="date">Due Date</label>
-                                                <input type="date" class="form-control" id="noteDueDate"
-                                                    placeholder="dd/mm/yyyy" required>
-                                            </div>
-
-
-                                            <div class="col-md-4 mb-3" id="NoteTime">
-                                                <label for="time">Due Time</label>
-                                                <input type="time" onload="Date().toString()" class="form-control"
-                                                    id="noteDueTime" placeholder="Date().toString()">
-                                            </div>
-
-
-                                            <div class="col-md-4 mb-3">
-                                                <span class="btn-group-">
-                                                    <!-- col-ml-md-auto -->
-                                                    <button onclick="saveStickyNote()" type="submit" id="saveBtn"
-                                                        class="btn btn-danger bmd-btn-fab form-control">
-                                                        Save
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-4 mb-3" id="NoteTask">
+                                        <i class="fas fa-pencil-alt prefix"></i>
+                                        <label for="task" class="">Task</label>
+                                        <textarea type="text" class="md-textarea form-control" id="noteTaskName"
+                                            rows="2" placeholder="Write your Task" required></textarea>
                                     </div>
-                                </form>
-                            </div>
+
+                                    <div class="col-md-4 mb-3" id="NoteDate">
+                                        <label for="date">Due Date</label>
+                                        <input type="date" class="form-control" id="noteDueDate"
+                                            placeholder="dd/mm/yyyy" required>
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3" id="NoteTime">
+                                        <label for="time">Due Time</label>
+                                        <input type="time" onload="Date.now().toString()" class="form-control"
+                                            id="noteDueTime" placeholder="Date().toString()">
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3">
+                                        <span class="btn-group-">
+                                            <!-- col-ml-md-auto -->
+                                            <button onclick="saveStickyNote()" type="submit" id="saveBtn"
+                                            class="btn btn-deep-orange"><i class="fal fa-sticky-note"></i>
+                                            Save</button>
+                                        </span>
+                                    </div>
+
+
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="noteLayout" id="note_cards_data"></div>
     </div>
-
     
+
+
 
     <!--* /Start your project here *-->
 

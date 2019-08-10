@@ -22,16 +22,169 @@ body {
     margin-bottom: 10px;
 } */
 
+#fromInputs{
+
+}
 
 #notes_form {
+    text-align: start;
     position: relative;
     background-image: url(../img/FormBG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
+    display: inline-flex;
     height: auto;
     width: fit-content;
     margin: auto;
     padding-bottom: 74px;
+}
+
+
+#NoteTask {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 49px;
+    color: black;
+    border: transparent;
+}
+
+#NoteDate {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 49px;
+}
+
+#NoteTime {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 49px;
+}
+
+#noteTaskName {
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    width: fit-content;
+    color: black;
+    border: transparent;
+}
+
+
+#noteDueDate {
+    background-color: rgba(0, 0, 0, 0);
+    height: calc(1.5em + 0.75rem + 2px);
+    width: fit-content;
+}
+
+
+#noteDueTime {
+    background-color: rgba(0, 0, 0, 0);
+    height: calc(1.5em + 0.75rem + 2px);
+    width: fit-content;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+}
+
+
+#noteDueDate.form-control {
+    border: transparent;
+}
+
+#noteDueTime.form-control  {
+    border: transparent;
+}
+
+#saveBtn{
+    margin-left: 32px;
+}
+
+
+
+
+
+
+
+
+.card-deck {
+    
+}
+
+
+.main_card_style {
+    background-image: url(../img/note2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+    margin: 25px;
+    border: transparent;
+}
+
+.card-text {
+    background-size: cover;
+    width: 18rem;
+    height: 18rem;
+    margin: 11px;
+    align-items: flex-start;
+    background-position: center;
+}
+
+.noteLayout {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 36px;
+}
+
+
+#noteDelBtn {
+    position: absolute;
+    right: -5px;
+    bottom: 17px
+    
+}
+
+.task_text {
+    background-color: rgba(0, 0, 0, .00);
+    position: absolute;
+    text-align: -webkit-left;
+    top: 90px;
+    left: 14px;
+    width: 258px;
+    height: 129px;
+    overflow: scroll;
+    align-self: center;
+}
+
+.task_date {
+    position: absolute;
+    bottom: 43px;
+    left: 10px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, .00);
+    background-color: rgba(0, 0, 0, .00);
+    border-top: rgba(0, 0, 0, .00);
+    color: #dc3545;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    height: auto;
+}
+
+.task_time {
+    position: absolute;
+    bottom: 24px;
+    left: 10px;
+    background: rgba(0, 0, 0, .00);
+    background-color: rgba(0, 0, 0, .00);
+    border-top: rgba(0, 0, 0, .00);
+    font-size: 12px;
+    color: #dc3545;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    height: auto;
 }
