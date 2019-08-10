@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sticky Notes App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/311a8a6c24.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="./Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./Bootstrap/css/mdb.min.css" rel="stylesheet">
+    <!-- custom styles (optional) -->
+    <link href="./CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--* Start your project here *-->
+
+    <div id="intro-section" class="view">
+        <!-- Content -->
+        <div class="container px-md-3 px-sm-0">
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!-- Jumbotron -->
+                <div class="jumbotron p-0">
+                    <!-- Header image -->
+                    <div class="view overlay rounded-top" id="appHeader">
+                        <img src="./img/myTaskBoardTitle.png" alt="my task board title" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Jumbotron -->
+
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+
+                            <div class="list-group list-group-horizontal">
+
+                                <form class="noteForm needs-validation" id="fromInputs">
+                                    <!-- -->
+                                    <div class="form-row" id="notes_form">
+                                        <div class="col-md-4 mb-3 md-form" id="NoteTask">
+                                            <label for="Task">Task</label>
+                                            <input type="text" class="form-control" id="noteTaskName" required>
+                                            <div class="invalid-feedback">
+                                                Please Write your task
+                                            </div>
+
+
+                                            <div class="col-md-4 mb-3" id="NoteDate">
+                                                <label for="date">Due Date</label>
+                                                <input type="date" class="form-control" id="noteDueDate"
+                                                    placeholder="dd/mm/yyyy" required>
+                                            </div>
+
+
+                                            <div class="col-md-4 mb-3" id="NoteTime">
+                                                <label for="time">Due Time</label>
+                                                <input type="time" onload="Date().toString()" class="form-control"
+                                                    id="noteDueTime" placeholder="Date().toString()">
+                                            </div>
+
+
+                                            <div class="col-md-4 mb-3">
+                                                <span class="btn-group-">
+                                                    <!-- col-ml-md-auto -->
+                                                    <button onclick="saveStickyNote()" type="submit" id="saveBtn"
+                                                        class="btn btn-danger bmd-btn-fab form-control">
+                                                        Save
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--* /Start your project here *-->
+
+    <!--* SCRIPTS *-->
+    <script src="./Scripts/sticky_notes_app.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="./Bootstrap/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./Bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./Bootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../Project_1_Sticky_notes/Bootstrap/js/mdb.min.js"></script>
+    <!--* /SCRIPTS *-->
+</body>
+
+</html>

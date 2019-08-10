@@ -1,0 +1,130 @@
+body {
+    font-family: "sutro";
+    src: url("https://use.typekit.net/af/965222/00000000000000003b9ad924/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"), url("https://use.typekit.net/af/965222/00000000000000003b9ad924/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"), url("https://use.typekit.net/af/965222/00000000000000003b9ad924/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+    font-style: italic;
+    font-weight: 300;
+    background-image: url("../img/woodBoardBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.app_title {
+    grid-area: header;
+    width: 50%;
+    height: auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    align-self: auto;
+    padding-top: 68px;
+    margin-bottom: 50px
+}
+
+#notes_form {
+    background-image: url(../img/FormBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-right: 105px;
+    padding-bottom: 112px;
+    padding-left: 105px
+}
+
+.form-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-right: 33px;
+    padding-left: 33px
+}
+
+#fromInputs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-right: 33px;
+    padding-left: 33px;
+    margin-top: 14px;
+    margin-right: 20px;
+    margin-left: 20px
+}
+
+.form-row {
+    padding-right: 20px;
+    padding-left: 38px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px
+}
+
+#NoteTask {
+    padding-right: 20px;
+    padding-left: 6px;
+    padding-top: 13px
+}
+
+#NoteDate {
+    padding-right: 44px;
+    padding-left: 0;
+    padding-top: 12px
+}
+
+#NoteTime {
+    padding-right: 44px;
+    padding-left: 0;
+    padding-top: 12px
+}
+
+#note_task_name {
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+#note_due_date {
+    background-color: rgba(0, 0, 0, 0);
+    height: calc(1.5em + 0.75rem + 2px)
+}
+
+#note_due_time {
+    background-color: rgba(0, 0, 0, 0);
+    height: calc(1.5em + 0.75rem + 2px)
+}
+
+label {
+    font-size: 20px
+}
+
+.btn-group-lg {
+    text-align: -webkit-auto;
+    padding-left: 18px;
+    font-size: -webkit-xxx-large
+}
+
+.card-deck {
+    background-image: url(../img/Untitled-1.png)
+}
