@@ -22,9 +22,6 @@ body {
     margin-bottom: 10px;
 } */
 
-#fromInputs{
-
-}
 
 #notes_form {
     text-align: start;
@@ -105,14 +102,6 @@ label {
 
 
 
-
-
-
-.card-deck {
-    
-}
-
-
 .main_card_style {
     background-image: url(../img/note2.png);
     background-repeat: no-repeat;
@@ -140,11 +129,10 @@ label {
 }
 
 
-#noteDelBtn {
+.btn-link {
     position: absolute;
     right: -5px;
-    bottom: 17px
-    
+    bottom: 17px;
 }
 
 .task_text {

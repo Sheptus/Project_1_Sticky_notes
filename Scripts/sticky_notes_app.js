@@ -35,10 +35,10 @@ function creatingStickyNote(stickyNote) {
     if (!sticky_note_task_name || !sticky_note_due_date || !sticky_note_due_time) return;
 
 
-    const uid = "note" + (new Date()).getMilliseconds() + Math.floor(Math.random(36));
-    while (document.getElementById(uid))
-        id += 1;
-    alert(uid)
+    // const uid = "note" + (new Date()).getMilliseconds() + Math.floor(Math.random(36));
+    // while (document.getElementById(uid))
+    //     id += 1;
+    // // alert(uid)
 
 
 
@@ -47,7 +47,7 @@ function creatingStickyNote(stickyNote) {
         cardNoteHolder.style.width = "18rem";
 
     const cardNoteBody = document.createElement("div");
-    cardNoteBody.id = uid // newid //uid
+    cardNoteBody.id = "note" // newid //uid
     cardNoteBody.setAttribute("class", "card mb-4 main_card_style noteId");
     // cardNoteBody.addEventListener("mouseover", delBtn);
 
@@ -66,10 +66,19 @@ function creatingStickyNote(stickyNote) {
 
 
     const delBtn = document.createElement("button");
-    delBtn.innerHTML = '<i class="fas fa-trash-alt fa-4x red-text pr-3" aria-hidden="true"></i>' ;
+    delBtn.innerHTML = '<i class="fas fa-trash-alt fa-4x red-text pr-3" aria-hidden="true"></i>';
     delBtn.className = "btn btn-link";
     delBtn.setAttribute("id", "noteDelBtn")
     delBtn.addEventListener("click", deleteNoteHandler);
+
+
+    $(document).ready(function () {
+        $('.uid').hover(function () {
+            $('#noteDelBtn').show();
+        }, function () {
+            $('#noteDelBtn').hide();
+        });
+    });
 
     const cardNoteDelBtn = document.createElement("p");
     cardNoteDelBtn.append(delBtn)
@@ -81,11 +90,27 @@ function creatingStickyNote(stickyNote) {
         cardNoteDelBtn,
     );
 
-    console.log(cardNoteBody)
+    // console.log(cardNoteBody)
 
     return cardNoteBody;
 
 }
+
+
+// $(".card mb-4").hover(function(){
+//     $('.noteDelBtn').show();
+// },function(){
+//     $('.noteDelBtn').hide();
+// });
+
+// function delBtnHover() {
+//     let btn = document.getElementsByClassName("main_card_style");
+//     if (btn.style.display === "none") {
+//         btn.style.display = "block";
+//     } else {
+//         btn.style.display = "none";
+//     }
+// }
 
 
 function clearNotes() {
@@ -142,11 +167,11 @@ function delStickyNote(id) {
     storingDeletedNotes("deletedNotes", arrayOfDelNoteData);
     draw(arrayOfDelNoteData);
     saveToLocalStorage("stickyNoteData", arrayOfData);
-    draw(arrayOfData);  
+    draw(arrayOfData);
 }
 
 
-//*~~~Delete Btn Even Listener~~~*\\
+//*~~~Delete Btn Event Listener~~~*\\
 function deleteNoteHandler() {
     delStickyNote(this.parentElement.parentElement.id)
 }
@@ -261,3 +286,4 @@ initSaveNotes()
 // //# set id right here so that no element can get that id between the check and setting it
 
 // console.log(id)
+
